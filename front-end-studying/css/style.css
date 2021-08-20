@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+
+    background-color: rgb(196, 88, 88);
+
+    /* overflow: hidden; */
+}
+
+div.content {
+    width: 100%;
+    height: 100vh;
+}
+
+div.list {
+    background: white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 4%;
+
+    width: 98%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid black;
+}
+
+/* buttons table */
+div.div-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-buttons button {
+    width: 40%;
+
+    transition: 0.15s;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.edit-product:hover {
+    border: 1px solid green;
+    
+    color: green;
+
+    width: 43%;
+}
+
+.delete-product:hover {
+    border: 1px solid red;
+    
+    color: red;
+
+    width: 43%;
+}
+
+/* create-product button */
+div.create-product {
+    width: 40%;
+    height: 8%;
+
+    margin-top: 3%;
+    margin-bottom: 1%;
+
+    display: flex;
+    justify-content: center;
+}
+
+div.create-product button {
+    width: 50%;
+    height: 40px;
+
+    background: black;
+
+    color: white;
+    font-size: 16px;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.20s;
+}
+
+div.create-product button:hover {
+    background: white;
+
+    color: black;
+
+    border: 1px solid black;
+}
+
+/* forms create and change product */
+.modal form {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form.create-product .text-input, form.put-form .text-input {
+    display: flex;
+    flex-direction: column;
+}
+
+div.parent {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form.create-product div, form.put-form div {
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form.create-product div div, form.put-form div div {
+    flex-direction: row;
+}
+
+/* ---input animation */
+form.create-product .text-input input, form.put-form .text-input input {
+    /* background: rgb(196, 88, 88); */
+    width: 50%;
+
+    font-size: 16px;
+    text-align: center;
+
+    transition: 0.25s;
+}
+
+form.create-product .text-input input:focus, form.put-form .text-input input:focus {
+    width: 60%;
+}
+
+
+form.create-product input[type="radio"], form.put-form input[type="radio"]{
+    width: 35%;
+
+    cursor: pointer;
+
+    transition: 0.20s;
+}
+
+form.create-product input[type="radio"]:focus, form.put-form input[type="radio"]:focus{
+    width: 60%;
+}
+
+form.create-product button[type="button"], form.put-form button[type="button"] {
+    background: black;
+
+    width: 40%;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+form.create-product button[type="button"]:focus, form.put-form button[type="button"]:focus {
+    background: white;
+
+    width: 45%;
+
+    border: 1px solid;
+
+    color: black;
+}
+
+form.create-product button[type="button"]:hover, form.put-form button[type="button"]:hover {
+    background: white;
+
+    width: 45%;
+
+    border: 1px solid;
+
+    color: black;
+}

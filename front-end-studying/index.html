@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+    <div class="content">
+        <div class="list">
+            <div class="messages">
+                <h2>All product</h2>
+            </div>
+
+            <table width="80%" cellpadding = "7"> 
+                <thead>
+                    <tr>
+                        <th><h3>ID</h3></th>
+                        <th><h3>Name</h3></th>
+                        <th><h3>Category</h3></th>
+                        <th><h3>Quantity</h3></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    
+                </tbody>
+            </table>
+
+            <div class="create-product">
+                <button onclick="openModal('modal-create-product'), validationFields('create-product')"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-create-product" class="modal-container">
+        <div class="modal">
+            <button type="button" class="close"><i class="fas fa-times"></i></button>
+
+            <form class="create-product"> 
+        
+                <div class="text-input parent">
+                    <label for="">Product name: </label>
+                    <input type="text" name="name">
+                    <span style="color: red;"></span>
+                </div>
+
+                <div class="parent">
+                    <label for="">Product category: </label>
+
+                    <div>
+                        <div>
+                            <input type="radio" name="category" checked value="tecnology" id="">tecnology
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="category" value="toys" id="">toys
+                        </div>
+                            
+                        <div>
+                            <input type="radio" name="category" value="kitchen" id="">kitchen
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-input parent">
+                    <label for="">Product quantity: </label>
+                    <input type="number" name="quantity">
+                    <span style="color: red;"></span>
+                </div>
+
+                <div class="parent">
+                    <button type="button">Create</button>
+                </div>
+                
+            </form>
+
+        </div>
+    </div>
+
+    <div id="change-product" class="changeProduct">
+        <div class="modal">
+            <button type="button" class="close"><i class="fas fa-times"></i></button>
+
+            <form action="" class="put-form">
+                <div class="text-input parent">
+                    <label for="">Product new name: </label>
+                    <input type="text" name="name" id="name">
+                    <span style="color: red;"></span>
+                </div>
+
+                <div class="parent">
+                    <label for="">Product new category: </label>
+
+                    <div>
+                        <div>
+                            <input type="radio" name="category" value="tecnology" class="category">tecnology
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="category" value="toys" class="category">toys
+                        </div>
+                            
+                        <div>
+                            <input type="radio" name="category" value="kitchen" class="category">kitchen
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-input parent">
+                    <label for="">Product quantity: </label>
+                    <input type="number" name="quantity" id="quantity">
+                    <span style="color: red;"></span>
+                </div>
+
+                <div>
+                    <button type="button">Change</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
